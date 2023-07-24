@@ -26,4 +26,6 @@ import config from "./config.js";
 
     }
 
+    process.exit();
+
 })();

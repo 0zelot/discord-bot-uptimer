@@ -19,10 +19,14 @@ import config from "./config.js";
         sendWebhook("offline", data);
         runActions();
 
+        return;
+
     } else if(bot && (data.status !== "online")) {
 
         setStatus("online");
         sendWebhook("online", data);
+
+        return;
 
     }
 
